@@ -1,14 +1,10 @@
 const root = document.documentElement;
 const progress = document.querySelector('.progress span');
-const header = document.querySelector('[data-header]');
-let lastY = 0;
 
 const onScroll = () => {
   const y = window.scrollY;
   const max = root.scrollHeight - window.innerHeight;
   progress.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
-  header.classList.toggle('is-hidden', y > lastY && y > 180);
-  lastY = Math.max(0, y);
 };
 
 window.addEventListener('scroll', onScroll, { passive: true });

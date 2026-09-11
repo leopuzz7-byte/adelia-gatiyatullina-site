@@ -44,9 +44,9 @@ img { display: block; width: 100%; }
 .hero-shade { background: linear-gradient(90deg, rgba(239,227,206,.98) 0 38%, rgba(239,227,206,.76) 51%, rgba(239,227,206,.03) 72%); }
 .hero-grid { position: relative; z-index: 1; min-height: 100svh; padding: 105px var(--pad) 30px; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto 1fr auto; }
 .kicker { grid-column: 1; margin: 0; font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.hero-copy { grid-column: 1; align-self: center; width: min(850px, 64vw); padding: 42px 0 20px; }
-.hero h1 { margin: 0; font: 400 clamp(4.4rem, 8.5vw, 9.8rem)/.82 var(--serif); letter-spacing: -.065em; }
-.hero h1 span { font-size: .69em; letter-spacing: -.04em; }
+.hero-copy { grid-column: 1; align-self: center; width: min(960px, 69vw); padding: 42px 0 20px; }
+.hero h1 { margin: 0; font: 400 clamp(4.2rem, 6.4vw, 7rem)/.82 var(--serif); letter-spacing: -.065em; }
+.hero h1 span { font-size: 1em; letter-spacing: inherit; }
 .hero-audience { max-width: 680px; margin: 30px 0 34px; font-size: clamp(1rem, 1.3vw, 1.24rem); line-height: 1.55; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; min-width: 218px; min-height: 56px; padding: 0 18px 0 22px; color: #fff; background: var(--wine); border: 1px solid var(--wine); text-decoration: none; font-size: .86rem; font-weight: 700; transition: .25s ease; }
 .button span { font-size: 1.35rem; line-height: 1; }
@@ -170,7 +170,7 @@ img { display: block; width: 100%; }
   .kicker { grid-column: 1; }
   .kicker { max-width: 290px; font-size: .66rem; line-height: 1.4; letter-spacing: .1em; }
   .hero-copy { grid-column: 1; align-self: start; width: 100%; padding-top: 34px; }
-  .hero h1 { max-width: 100%; font-size: clamp(2.8rem, 12.5vw, 3.4rem); line-height: .86; letter-spacing: -.055em; }
+  .hero h1 { max-width: 100%; font-size: clamp(2.05rem, 10.2vw, 2.75rem); line-height: .86; letter-spacing: -.055em; }
   .hero-audience { max-width: 345px; margin: 24px 0 28px; font-size: .92rem; line-height: 1.52; }
   .button { min-height: 52px; min-width: 208px; }
   .scroll-cue { display: none; }

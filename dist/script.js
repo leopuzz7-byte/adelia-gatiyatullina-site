@@ -1,6 +1,15 @@
 const root = document.documentElement;
 const progress = document.querySelector('.progress span');
 
+// Keep the current section when moving between the two language editions.
+document.querySelectorAll('[data-language-link]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const target = new URL(link.href);
+    target.hash = window.location.hash;
+    link.href = target.href;
+  });
+});
+
 const onScroll = () => {
   const y = window.scrollY;
   const max = root.scrollHeight - window.innerHeight;
